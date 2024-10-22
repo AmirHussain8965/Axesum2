@@ -568,3 +568,5 @@ allDropdowns.forEach((btn) => {
     mainDropDownBtn.innerHTML = `${btn.innerText}  <img width="32" height="32" src="arrow.png" alt="expand-arrow--v1" class="after_img_dropdown" />`;
   });
 });
+
+

@@ -380,7 +380,7 @@
                                         </div>
 
                                     </div>
-                               </div>
+                               </div> 
 
                                <div class="mt-3" id="sendingOptions">
                                     <h1 class="fs-6 fw-500 g-medium">Sending Options*</h1>
@@ -528,7 +528,6 @@
                             </label>
                           </div>
 
-
                           <div class="form-check ms-2 QNA_checkbox px-3">
                             <input
                               class="form-check-input"
@@ -629,10 +628,303 @@
                           
                     </div>
 
+
+                    <div class="mt-5">
+                        <span class="fw-700 g-bold">Or Select the type of answer you want</span>
+                        <div class="new_question_tabs_main">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="pills-Question1-tab" data-bs-toggle="pill" data-bs-target="#pills-Question1" type="button" role="tab" aria-controls="pills-Question1" aria-selected="true">
+                                    <img src="../assets/img/icon-park-outline_text.svg" alt="">Text
+                                  </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-Question2-tab" data-bs-toggle="pill" data-bs-target="#pills-Question2" type="button" role="tab" aria-controls="pills-Question2" aria-selected="false">
+                                    <img src="../assets/img/star.svg" alt="">Rating
+                                  </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-Question3-tab" data-bs-toggle="pill" data-bs-target="#pills-Question3" type="button" role="tab" aria-controls="pills-Question3" aria-selected="false">
+                                    <img src="../assets/img/radio_single_select.svg" alt="">Single Select
+                                  </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-Question4-tab" data-bs-toggle="pill" data-bs-target="#pills-Question4" type="button" role="tab" aria-controls="pills-Question4" aria-selected="false">
+                                      <img src="../assets/img/mdi_checkbox-outline.svg" alt="">Checkbox
+                                    </button>
+                                  </li>
+                              </ul>
+
+                              
+                              <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-Question1" role="tabpanel" aria-labelledby="pills-Question1-tab" tabindex="0">
+                                  <div class="question_tab_content">
+                                    <div class="question_tab1_inner">
+
+                                        <div class="add_tick1_content mb-4">
+                                            <div class="add_tick_tabs_input">
+                                                <input type="text" id="" placeholder="">
+                                                <label for="">Question title*</label> 
+                                            </div>
+                                            <div class="add_tick_tabs_input">
+                                                <input type="text" id="" placeholder="">
+                                                <label for="">Help Text*</label> 
+                                            </div>
+                                    </div> 
+
+                                      <p class="que_txt1">Response Length</p>
+                                      <div class="que_tab2_main">
+                                        <button type="button"><img src="../assets/img/T.png" alt="">Single Line</button>
+                                        <button type="button" class="active"><img src="../assets/img/majesticons_text.png" alt="">Multi-Line</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-Question2" role="tabpanel" aria-labelledby="pills-Question2-tab" tabindex="0">
+                                  <div class="question_tab_content">
+                                    <div class="question_tab2_inner">
+                                      <p class="que_txt1 mb-3">Display Type</p>
+                                      <div class="dropdown display_type_for_rating">
+                                        <button
+                                          class="btn rounded-3 displayTypeForRating"
+                                          type="button"
+                                          id="displayTypeForRating"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <div class="d-flex align-items-center innerText">
+                                            <img src="../assets/img/star.svg" alt="" class="img-fluid me-2" /> Stars
+                                          </div>
+                                          <img src="../assets/img/arrow_down.svg" alt="" />
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="displayTypeForRating">
+                                          <li>
+                                            <button
+                                              class="dropdown-item rounded-top d-flex align-items-center"
+                                              href="#"
+                                            >
+                                              <img src="../assets/img/star.svg" alt="" class="img-fluid me-2" />
+                                              Stars
+                                            </button>
+                                          </li>
+                                          <li>
+                                            <button class="dropdown-item d-flex align-items-center change_stars_to_number" href="#">
+                                              <img src="../assets/img/numbers.svg" alt="" class="img-fluid me-2" />
+                                              Numbers
+                                            </button>
+                                          </li>
+                                          <li>
+                                            <button class="dropdown-item d-flex align-items-center" href="#">
+                                              <img src="../assets/img/emoji.svg" alt="" class="img-fluid me-2" />
+                                              Emoji
+                                            </button>
+                                          </li>
+                                          <li>
+                                            <button
+                                              class="dropdown-item rounded-bottom change_stars_to_text d-flex align-items-center"
+                                              href="#"
+                                            >
+                                              <img src="../assets/img/iconoir_text.svg" alt="" class="img-fluid me-2" />
+                                              Text
+                                            </button>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <p class="que_txt1 my-3">Maximum Rating</p>
+                                      <div class="dropdown display_type_for_rating">
+                                        <button
+                                          class="btn rounded-3 displayTypeForRating"
+                                          type="button"
+                                          id="displayTypeForRating"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <div class="d-flex align-items-center innerText">
+                                            5
+                                          </div>
+                                          <img src="../assets/img/arrow_down.svg" alt="" />
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="displayTypeForRating">
+                                          <li>
+                                            <button
+                                              class="dropdown-item rounded-top d-flex align-items-center"
+                                              href="#"
+                                            >
+                                              5
+                                            </button>
+                                          </li>
+                                          <li>
+                                            <button class="dropdown-item d-flex align-items-center" href="#">
+                                              4
+                                            </button>
+                                          </li>
+                                          <li>
+                                            <button class="dropdown-item d-flex align-items-center" href="#">
+                                              3
+                                            </button>
+                                          </li>
+                                          <li>
+                                            <button
+                                              class="dropdown-item d-flex align-items-center"
+                                              href="#"
+                                            >
+                                              2
+                                            </button>
+                                          </li>
+                                          <li>
+                                            <button
+                                              class="dropdown-item rounded-bottom d-flex align-items-center"
+                                              href="#"
+                                            >
+                                              1
+                                            </button>
+                                          </li>
+                                        </ul>
+                                      </div>
+
+                                      <p class="que_txt1 my-3">Helper Text</p>
+                                      <div class="add_tick1_content mt-2 d-flex" >
+                                        <div class="add_tick_tabs_input me-1">
+                                            <input type="text" id="" placeholder="Poor ">
+                                            <label for="">First Item</label> 
+                                        </div>
+                                        <div class="add_tick_tabs_input ms-1">
+                                            <input type="text" id="" placeholder="Excellent">
+                                            <label for="">Last Item</label> 
+                                        </div>
+                                    </div>
+
+
+                                    <p class="que_txt1 my-3">Preview</p>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column text-center rating">
+                                            <div class="star_inside_for_rating">
+                                                <img src="../assets/img/star.svg" alt="">
+                                            </div>
+                                            <span class="text_base fs-sm g-book fw-400">Excellent</span>
+                                        </div>
+
+                                        <div class="d-flex flex-column text-center rating">
+                                            <div class="star_inside_for_rating">
+                                                <img src="../assets/img/star.svg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column text-center rating">
+                                            <div class="star_inside_for_rating">
+                                                <img src="../assets/img/star.svg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column text-center rating">
+                                            <div class="star_inside_for_rating">
+                                                <img src="../assets/img/star.svg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column text-center rating">
+                                            <div class="star_inside_for_rating">
+                                                <img src="../assets/img/star.svg" alt="">
+                                            </div>
+                                            <span class="text_base fs-sm g-book fw-400">Poor</span>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-Question3" role="tabpanel" aria-labelledby="pills-Question3-tab" tabindex="0">
+                                    <div class="question_tab_content">
+                                      <div class="question_tab3_inner">
+                                        <!-- <p class="que_txt1">Text Box</p>
+                                        <div class="dash2_input_div">
+                                          <textarea name="" id="" cols="" rows="5" placeholder="I agree with Terms & Conditions given below:"></textarea>                                           
+                                        </div>  -->
+                                        <div class="add_tick1_content mt-2">
+                                          <div class="add_tick_tabs_input">
+                                              <input type="text" id="" placeholder="">
+                                              <label for="">Question title*</label> 
+                                          </div>
+                                          <div class="add_tick_tabs_input">
+                                              <input type="text" id="" placeholder="">
+                                              <label for="">Help Text*</label> 
+                                          </div>
+                                        </div> 
+                  
+                  
+                                          <div class="mt-4">
+                                              <span class="fw-700 g-bold">Add Options</span> <br>
+                                              <button class="text_secondary fw-500 g-medium bg-transparent fs-sm border-0 mt-1" type="button">+ Add Another Option</button>
+                                              <div class=" pb-4 pt-4 mt-4" id="surveyOptionContainer">
+                                                  <div class="question">
+                                                      <div class="d-flex align-items-center">
+                                                          <img src="../assets/img/question_sidebar.svg" alt="Img not Found" class="img-fluid me-2">
+                          
+                                                          <div class="d-flex flex-column">
+                                                          <input type="text" class="survey_page_gender_option" value="Male">
+                                                          </div>
+                          
+                          
+                                                      </div>
+                          
+                                                      <div class="edit_question_side">
+                                                          <button class="btn p-0 bg-transparent"><img src="../assets/img/delete_reports.svg" alt=""></button>
+                                                      </div>
+                          
+                                                  </div>
+                                          </div>
+                          
+                                          <div id="surveyOptionContainer">
+                                              <div class="question">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="../assets/img/question_sidebar.svg" alt="Img not Found" class="img-fluid me-2">
+                          
+                                                      <div class="d-flex flex-column">
+                                                      <input type="text" class="survey_page_gender_option" value="Female">
+                                                      </div>
+                          
+                          
+                                                  </div>
+                          
+                                                  <div class="edit_question_side">
+                                                      <button class="btn p-0 bg-transparent"><img src="../assets/img/delete_reports.svg" alt=""></button>
+                                                  </div>
+                          
+                                              </div>
+                                      </div>
+                                          </div>
+  
+                                          <div class="dash2_input_div">
+                                              <label for="">Ticket type*</label>
+                                              <select name="" id="" class="form-select">
+                                                <option value="">All</option>
+                                                <option value="">REGULAR</option>
+                                                <option value="">COURTESY</option>
+                                                <option value="">VIP</option>
+                                              </select>
+                                          </div> 
+  
+                                          <div class="que_checkbox">
+                                              <input type="checkbox" id="Mandatory">
+                                              <label for="Mandatory">Mark as Mandatory</label>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tab-pane fade" id="pills-Question4" role="tabpanel" aria-labelledby="pills-Question4-tab" tabindex="0">
+                                    <div class="question_tab_content">
+  
+                                    </div>
+                                  </div>
+                    </div>
+                    </div>
+
+                
+
                   <div class="d-flex justify-content-end align-items-center mt-3">
-                    <button data-bs-dismiss="modal" type="button" class="rounded-pill mx-1 border_base bg-transparent text_base px-4 py-2">Cancel
+                    <button data-bs-dismiss="modal" type="button" class="rounded-pill mx-1 border_base bg-transparent text_base px-4 py-2">Discard
                     </button>
-                    <button type="button" class="rounded-pill mx-1 bg_primary handle_create_report text-white px-4 py-2 border-0">Create</button>
+                    <button type="button" class="rounded-pill mx-1 bg_primary handle_create_report text-white px-4 py-2 border-0">Save</button>
                   </div> 
             </div>
         </div>
@@ -651,23 +943,93 @@
     <script src="../assets/js/dashboard.js"></script>
     <!-- <script src="../assets/js/dashboard2.js"></script> -->
 
-    <script src="../assets/js/report.js"></script>
     <script>
-            const sendingOptionsDropdownBtn = document.querySelector(
-            '#dropdownSendingOptionsSurvey .innerText'
-            );
+        const allRatings = document.querySelectorAll(".rating")
 
-            const allSendingOptionsSurvey = document.querySelectorAll(
-            '.dropdown_survey_sending_options .dropdown-item'
-            );
-            allSendingOptionsSurvey.forEach((opt) => {
-            opt.addEventListener('click', () => {
-                let text = opt.innerHTML;
-                // alert(opt.innerHTML);
-                sendingOptionsDropdownBtn.innerText = text;
-            });
-            });
-    </script>
+        const allOptions = ["Excellent", "Good", "Average", "Fair", "Poor"];
+
+        const changeToTextRating = document.querySelector(".change_stars_to_text")
+
+        const changeToNumberRating = document.querySelector(".change_stars_to_number")
+
+        changeToTextRating.addEventListener("click", () => {
+            allRatings.forEach((rating, index) => {
+            if(rating.children.length == 2){
+                rating.children[1].remove()  
+            };
+            
+
+            rating.classList.add("align-items-center")
+            rating.innerHTML = `
+                 <div class="star_inside_for_rating">
+                    <img src="../assets/img/star.svg" alt="">
+                </div>
+                <span class="text_base fs-sm g-book fw-400">${allOptions[index]}</span>
+            `
+        })
+        })
+
+
+        changeToNumberRating.addEventListener("click", () => {
+            allRatings.forEach((rating, index) => {
+                if (rating.children[1]) {
+                    if (rating.children[1].innerHTML == "Excellent") {
+                    // console.log(rating.children[1]);
+                }else if(rating.children[1].innerHTML == "Poor") {
+                    // console.log(rating.children[1]);
+                }else {
+                    
+                    rating.children[1].innerHTML = ""
+                    
+                }
+            }
+            
+
+            rating.classList.add("align-items-center")
+            // rating.innerHTML = `
+            //      <div class="star_inside_for_rating">
+            //         <img src="../assets/img/star.svg" alt="">
+            //     </div>
+            //     <span class="text_base fs-sm g-book fw-400">${allOptions[index]}</span>
+            // `
+        })
+        })
+
+        
+
+        const sendingOptionsDropdownBtn = document.querySelector(
+        '#dropdownSendingOptionsSurvey .innerText'
+        );
+
+        const allSendingOptionsSurvey = document.querySelectorAll(
+        '.dropdown_survey_sending_options .dropdown-item'
+        );
+        allSendingOptionsSurvey.forEach((opt) => {
+        opt.addEventListener('click', () => {
+            let text = opt.innerHTML;
+            // alert(opt.innerHTML);
+            sendingOptionsDropdownBtn.innerText = text;
+        });
+        });
+
+
+        const selectDisplayTypeForRating = document.querySelectorAll(
+        '.displayTypeForRating .innerText'
+        );
+
+        const allDisplayTypeOptions = document.querySelectorAll(
+        '.display_type_for_rating .dropdown-item'
+        );
+
+        allDisplayTypeOptions.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            let text = btn.innerHTML;
+            selectDisplayTypeForRating.innerHTML = text;
+        });
+    });
+
+</script>
+    <!-- <script src="../assets/js/report.js"></script> -->
 
 </body>
 
