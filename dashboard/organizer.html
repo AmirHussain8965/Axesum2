@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axesum - Organizer Dashboard</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+
+<body>
+
+    <section class="dashboard_main_section">
+        <div class="dashboard_sidebar_main_div">
+            <div class="dashboard_sidebar_logo_div">
+                <a href='#'><img src="../assets/img/logo.svg" alt=""></a>
+                <button type="button" id="btn_toggle_mobile">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="dashboard_sidebar_links_main">
+                <div class="dashboard_sidebar_links_div">
+                    <a class="active" href='./dashboard.html'>
+                        <img src="../assets/img/ds1.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>                
+                    <a href="#">
+                        <img src="../assets/img/ds4.svg" alt="">
+                        <span>My Events</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds5.svg" alt="">
+                        <span>My Collection</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds6.svg" alt="">
+                        <span>Email Attendees</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds7.svg" alt="">
+                        <span>Organization </span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds8.svg" alt="">
+                        <span>Affiliate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content_main">
+            <div class="dashboard_navbar_main_div">
+                <div class="container-fluid">
+                    <div class="dashboard_nav_content">
+                        <div class="dashboard_nav_text">
+                            <h5>Welcome, Sarah <img src="../assets/img/Waving.svg" alt=""></h5>
+                            <p>Get started by creating an event</p>
+                        </div>
+                        <div class="dashboard_nav_img">
+                            <img src="../assets/img/dni1.svg" alt="...">
+                            <img src="../assets/img/dni2.svg" alt="...">
+                            <img src="../assets/img/dni3.svg" alt="...">
+                            <img src="../assets/img/profile.svg" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_content_div">
+                <div class="container-fluid dashboard_container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="orga_dash_card_body">
+                                <div class="orga_dash_card_body_mask">
+                                    <div class="org_card_toptxt">
+                                        <img src="../assets/img/calendar.svg" alt="">
+                                        <h5>TOTAL NUMBER <br>
+                                            OF EVENTS</h5>
+                                            <p>2000+</p>
+                                            <div class="chart_div">
+                                                <div class="chart_text">
+                                                    <canvas id="myDoughnutChart"></canvas>
+                                                    <p>Total Events <br>2000+</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="org_card_bottomtxt">
+                                        <label><span class="org1_color"></span><p>Live Events</p></label>
+                                        <label><span class="org2_color"></span><p>Closed Events</p></label>
+                                        <label><span class="org3_color"></span><p>Virtual Events</p></label>
+                                        <label><span class="org4_color"></span><p>In-Person Events</p></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="orga_dash_card_body">
+                                <div class="orga_dash_card_body_mask">
+                                    <div class="org_card_toptxt">
+                                        <img src="../assets/img/ph_coins-light.svg" alt="">
+                                        <h5>TOTAL SALES</h5>
+                                            <p>$54,000</p>
+                                    </div>
+                                    <div class="org_card_inter_text">
+                                        <p><img src="../assets/img/green_arrow.svg" alt=""> <span class="pos_arrow">8.5%</span> Up from yesterday</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="orga_dash_card_body">
+                                <div class="orga_dash_card_body_mask">
+                                    <div class="org_card_toptxt">
+                                        <img src="../assets/img/system-uicons_ticket.svg" alt="">
+                                        <h5>TOTAL TICKETS SOLD</h5>
+                                            <p>2500</p>
+                                    </div>
+                                    <div class="org_card_inter_text">
+                                        <p><img src="../assets/img/red_arrow.svg" alt=""> <span class="neg_arrow"> 2.3%</span> Down from yesterday</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12"> 
+                            <div class="orga_dash_card_body">
+                                <div class="orga_dash_card_body_mask">
+                                    <div class="org_card_toptxt">
+                                        <img src="../assets/img/bi_people.svg" alt="">
+                                        <h5>AVERAGE ATTENDANCE</h5>
+                                            <p>78.5%</p>
+                                    </div>
+                                    <div class="org_card_inter_text">
+                                        <p><img src="../assets/img/green_arrow.svg" alt=""> <span class="pos_arrow">8.5%</span> Up from last month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="orga_dash_card_body">
+                                <div class="orga_dash_card_body_mask">
+                                    <div class="org_card_toptxt">
+                                        <img src="../assets/img/solar_star-broken.svg" alt="">
+                                        <h5>OVERALL RATING</h5>
+                                            <p>5.0</p>
+                                    </div>
+                                    <div class="org_rating">
+                                        <i class="bi bi-star" data-rating="1"></i>
+                                        <i class="bi bi-star" data-rating="2"></i>
+                                        <i class="bi bi-star" data-rating="3"></i>
+                                        <i class="bi bi-star" data-rating="4"></i>
+                                        <i class="bi bi-star" data-rating="5"></i>
+                                    </div>
+                                    <p class="mt-3 d-none"><span id="rating-value">0</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="table_title">EVENT METRICS</h3>
+                    <div class="org_table_main">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col"><p class="table_head text-start"> EVENT NAME</p></th>
+                                <th scope="col"><p class="table_head"> LOCATION</p></th>
+                                <th scope="col"><p class="table_head"> TIME & DAY</p></th>
+                                <th scope="col"><p class="table_head"> CURRENCY</p></th>
+                                <th scope="col"><p class="table_head"> TOTAL SALES</p></th>
+                                <th scope="col"><p class="table_head"> TICKETS SOLD / TOTAL TICKETS</p></th>
+                                <th scope="col"><p class="table_head"> EVENT ATTENDANCE</p></th>
+                                <th scope="col"><p class="table_head"> RATING</p></th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"><p class="table_td">Music Fest 2024</p></th>        
+                                <td><p class="table_td">San Francisco, <br>
+                                    California</p></td>
+                                <td><p class="table_td">Tuesday, August 6, <br> 2024 at 10:00 PM IST</p></td>
+                                <td><p class="table_td">USD</p></td>
+                                <td><p class="table_td">$25,000</p></td>
+                                <td><p class="table_td">900/1000</p></td>
+                                <td><p class="table_td">90.0%</p></td>
+                                <td><div class="org_rating" id="table_rating">
+                                        <i class="bi bi-star" data-rating="1"></i>
+                                        <i class="bi bi-star" data-rating="2"></i>
+                                        <i class="bi bi-star" data-rating="3"></i>
+                                        <i class="bi bi-star" data-rating="4"></i>
+                                        <i class="bi bi-star" data-rating="5"></i>
+                                    </div>
+                            </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><p class="table_td">Music Fest 2024</p></th>        
+                                <td><p class="table_td">San Francisco, <br>
+                                    California</p></td>
+                                <td><p class="table_td">Tuesday, August 6, <br> 2024 at 10:00 PM IST</p></td>
+                                <td><p class="table_td">USD</p></td>
+                                <td><p class="table_td">$25,000</p></td>
+                                <td><p class="table_td">900/1000</p></td>
+                                <td><p class="table_td">90.0%</p></td>
+                                <td><div class="org_rating" id="table_rating">
+                                        <i class="bi bi-star" data-rating="1"></i>
+                                        <i class="bi bi-star" data-rating="2"></i>
+                                        <i class="bi bi-star" data-rating="3"></i>
+                                        <i class="bi bi-star" data-rating="4"></i>
+                                        <i class="bi bi-star" data-rating="5"></i>
+                                    </div>
+                            </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><p class="table_td">Music Fest 2024</p></th>        
+                                <td><p class="table_td">San Francisco, <br>
+                                    California</p></td>
+                                <td><p class="table_td">Tuesday, August 6, <br> 2024 at 10:00 PM IST</p></td>
+                                <td><p class="table_td">USD</p></td>
+                                <td><p class="table_td">$25,000</p></td>
+                                <td><p class="table_td">900/1000</p></td>
+                                <td><p class="table_td">90.0%</p></td>
+                                <td><div class="org_rating" id="table_rating">
+                                        <i class="bi bi-star" data-rating="1"></i>
+                                        <i class="bi bi-star" data-rating="2"></i>
+                                        <i class="bi bi-star" data-rating="3"></i>
+                                        <i class="bi bi-star" data-rating="4"></i>
+                                        <i class="bi bi-star" data-rating="5"></i>
+                                    </div>
+                            </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><p class="table_td">Music Fest 2024</p></th>        
+                                <td><p class="table_td">San Francisco, <br>
+                                    California</p></td>
+                                <td><p class="table_td">Tuesday, August 6, <br> 2024 at 10:00 PM IST</p></td>
+                                <td><p class="table_td">USD</p></td>
+                                <td><p class="table_td">$25,000</p></td>
+                                <td><p class="table_td">900/1000</p></td>
+                                <td><p class="table_td">90.0%</p></td>
+                                <td><div class="org_rating" id="table_rating">
+                                        <i class="bi bi-star" data-rating="1"></i>
+                                        <i class="bi bi-star" data-rating="2"></i>
+                                        <i class="bi bi-star" data-rating="3"></i>
+                                        <i class="bi bi-star" data-rating="4"></i>
+                                        <i class="bi bi-star" data-rating="5"></i>
+                                    </div>
+                            </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><p class="table_td">Music Fest 2024</p></th>        
+                                <td><p class="table_td">San Francisco, <br>
+                                    California</p></td>
+                                <td><p class="table_td">Tuesday, August 6, <br> 2024 at 10:00 PM IST</p></td>
+                                <td><p class="table_td">USD</p></td>
+                                <td><p class="table_td">$25,000</p></td>
+                                <td><p class="table_td">900/1000</p></td>
+                                <td><p class="table_td">90.0%</p></td>
+                                <td><div class="org_rating" id="table_rating">
+                                        <i class="bi bi-star" data-rating="1"></i>
+                                        <i class="bi bi-star" data-rating="2"></i>
+                                        <i class="bi bi-star" data-rating="3"></i>
+                                        <i class="bi bi-star" data-rating="4"></i>
+                                        <i class="bi bi-star" data-rating="5"></i>
+                                    </div>
+                            </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+    
+    <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                // loop: true,
+                // autoplay: {
+                //     delay: 1500,
+                //     disableOnInteraction: false,
+                // },
+                breakpoints: {
+                    280: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    680: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    800: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1300: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+    </script>
+
+    <script>
+        var ctx = document.getElementById('myDoughnutChart').getContext('2d');
+        var myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                // labels: ['1', '2', '3', '4'],
+                datasets: [{
+                    label: 'My Events',
+                    data: [300, 150, 100, 70],
+                    backgroundColor: [
+                        '#BF85EB',   // Dark Purple
+                        '#B100D9', // Light Purple
+                        '#DEC7EF', // Purple
+                        '#7E14CF' // Medium Purple
+                    ],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        enabled: true
+                    }
+                },
+                cutout: '75%', // Increase inner space (default is 50%)
+                animation: {
+                    animateScale: true,
+                    animateRotate: true,
+                    duration: 1000, // Animation duration in milliseconds
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

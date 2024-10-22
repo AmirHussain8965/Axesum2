@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axesum - Build a Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+
+<body> 
+
+    <section class="dashboard_main_section">
+        <div class="dashboard_sidebar_main_div">
+            <div class="dashboard_sidebar_logo_div">
+                <a href='#'><img src="../assets/img/logo.svg" alt=""></a>
+                <button type="button" id="btn_toggle_mobile">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="dashboard_sidebar_links_main">
+                <div class="dashboard_sidebar_links_div">
+                    <a class="active" href='./dashboard.html'>
+                        <img src="../assets/img/ds1.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>                
+                    <a href="#">
+                        <img src="../assets/img/ds4.svg" alt="">
+                        <span>My Events</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds5.svg" alt="">
+                        <span>My Collection</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds6.svg" alt="">
+                        <span>Email Attendees</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds7.svg" alt="">
+                        <span>Organization </span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds8.svg" alt="">
+                        <span>Affiliate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content_main">
+            <div class="dashboard_navbar_main_div">
+                <div class="container-fluid">
+                    <div class="dashboard_nav_content">
+                        <div class="dashboard_nav_text">
+                            <h5>Welcome, Sarah <img src="../assets/img/Waving.svg" alt=""></h5>
+                            <p>Get started by creating an event</p>
+                        </div>
+                        <div class="dashboard_nav_img">
+                            <img src="../assets/img/dni1.svg" alt="...">
+                            <img src="../assets/img/dni2.svg" alt="...">
+                            <img src="../assets/img/dni3.svg" alt="...">
+                            <img src="../assets/img/profile.svg" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_content_div">
+                <div class="container-fluid dashboard_container">
+                    <div class="build_collection_main">
+                        <div class="buildco_bar_main">
+                            <div class="builco_title">
+                                <h3>Add details your collection</h3>
+                            </div>
+                            <div class="builcobuilco_bar_right_btn">
+                                <a href="#"><button type="button"><img src="../assets/img/mdi_eye.svg" alt=""> Preview Collection</button></a>
+                                <a href="#"><button type="button" class="builco_active">Publish Collection</button></a>
+                            </div>
+                        </div>
+                        <select name="" class="form-select draft_select">
+                            <option value="">Draft</option>
+                            <option value="">Option 2</option>
+                            <option value="">Option 3</option>
+                        </select>
+                        <div class="builco_text1">
+                            <h3>Add details your collection</h3>
+                            <p>Give your collection a descriptive name, and select an organizer to connect with it.</p>
+                        </div>
+                        <div class="builco_inputs_div">
+                            <label for="">Collection Name<span>*</span></label>
+                            <input type="text" placeholder="Untitled">
+                        </div>
+                        <div class="builco_inputs_div">
+                            <label for="">Organizer<span>*</span></label>
+                           <select name="" id="" class="form-select">
+                             <option value="">Global Access</option>
+                             <option value="">Global Access</option>
+                             <option value="">Global Access</option>
+                             <option value="">Global Access</option>
+                           </select>
+                        </div>
+                        <a href="#" class="seemore">Manage Organizer Information</a>
+                        <div class="builco_text1">
+                            <h3>Main Image</h3>
+                            <p>Add a high-resolution image to showcase your collection on the top of the page and in promotional campaigns. Ensure the image is at least 1272px wide, as it will be cropped to a 3:1 aspect ratio.</p>
+                        </div>
+
+                        <label for="upload_img" class="upload_image_div">
+                            <div class="upload_image_inner">
+                                <img src="../assets/img/upl_img.svg" alt="...">
+                                <p>Drag & Drop or <a href="#">Choose your file</a></p>
+                                <input type="file" id="upload_img" hidden>
+                            </div>
+                        </label>
+                        <div class="builco_text1">
+                            <h3>Add a summary</h3>
+                            <p>Provide a brief description of your collection. Our research shows that the most successful collections include at least 140 characters."</p>
+                        </div>
+                        <div class="builco_inputs_div">
+                            <label for="">Collection Summary<span>*</span></label>
+                            <textarea name="" id="" rows="6"></textarea>
+                        </div>
+                        <div class="builco_text1">
+                            <h3>Manage your collection</h3>
+                        </div>
+                        <div class="buildco_searchbar">
+                            <div class="buildco_search_input">
+                                <input type="text" placeholder="Search Events and Add">
+                                <img src="../assets/img/mynaui_search.svg" alt="">
+                            </div>
+                            <div class="buildco_bar_right_btn">
+                                <a href="#"><button type="button">Add Event</button></a>
+                            </div>
+                        </div> 
+
+                        <div class="builco_text1">
+                            <h3>Add your upcoming events</h3>
+                        </div>
+
+                        <div class="upccoming_event_card">
+                            <div class="buildco_upevent_inner">
+                                <img src="../assets/img/disco1.svg" class="upbig_img" alt="..">
+                                <div class="buildco_upevent_inner_text">
+                                    <p>Music Fest 2024</p>
+                                    <span>San Francisco, California.</span>
+                                    <label for="">Tuesday, August 6, 2024 at 10:00 PM IST</label>
+                                    <span><img src="../assets/img/lock.svg" alt="..."> Private</span>
+                                </div>
+                            </div>
+                            <div class="upccoming_event_card_btn">
+                                <button type="button">On Sale</button>
+                                <a href="#">Add Event</a>
+                            </div>
+                        </div>
+
+                        <div class="builco_text1">
+                            <h3>Choose your Audience</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <label for="public" class="choose_audience_card">
+                                    <div class="choose_aud_text_main">
+                                        <div class="choose_aud_logo">
+                                            <img src="../assets/img/world.svg" alt="">
+                                        </div>
+                                        <div class="choose_aud_text_inner">
+                                            <p>Public</p>
+                                            <span>Anyone can find and see this collection</span>
+                                        </div>
+                                    </div>
+                                    <div class="choose_radio_btn">
+                                        <input type="radio" id="public" name="audience" value="public">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <label for="private" class="choose_audience_card">
+                                    <div class="choose_aud_text_main">
+                                        <div class="choose_aud_logo">
+                                            <img src="../assets/img/world.svg" alt="">
+                                        </div>
+                                        <div class="choose_aud_text_inner">
+                                            <p>Private</p>
+                                            <span>Only People with link can see it</span>
+                                        </div>
+                                    </div>
+                                    <div class="choose_radio_btn">
+                                        <input type="radio" id="private" name="audience" value="private">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="builco_text1">
+                            <h3>Link to your page</h3>
+                            <p>Once published, share this link with your audience to direct them to the events in your collection.</p>
+                        </div>
+                        <div class="builco_inputs_div">
+                            <label for="">Collection URL:</label>
+                            <input type="text" placeholder="https://www.axesum.com/cc/untitled-3560669">
+                            <div class="copy_txt">
+                                <img src="../assets/img/copy.svg" alt="">
+                                <span>Copy</span>
+                            </div>
+                        </div>
+
+                        <div class="last_onebtn">
+                            <button type="button">Save and Continue Later</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

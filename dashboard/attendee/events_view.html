@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axesum - Events View</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+</head>
+
+<body>
+
+    <section class="dashboard_main_section">
+        <div class="dashboard_sidebar_main_div">
+            <div class="dashboard_sidebar_logo_div">
+                <a href='#'><img src="../../assets/img/logo.svg" alt=""></a>
+                <button type="button" id="btn_toggle_mobile">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="dashboard_sidebar_links_main">
+                <div class="dashboard_sidebar_links_div">
+                    <a class="active" href='./dashboard.html'>
+                        <img src="../../assets/img/ds1.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>                
+                    <a href="#">
+                        <img src="../../assets/img/ds4.svg" alt="">
+                        <span>My Events</span>
+                    </a>
+                    <a href="#">
+                        <img src="../../assets/img/ds5.svg" alt="">
+                        <span>My Collection</span>
+                    </a>
+                    <a href="#">
+                        <img src="../../assets/img/ds6.svg" alt="">
+                        <span>Email Attendees</span>
+                    </a>
+                    <a href="#">
+                        <img src="../../assets/img/ds7.svg" alt="">
+                        <span>Organization </span>
+                    </a>
+                    <a href="#">
+                        <img src="../../assets/img/ds8.svg" alt="">
+                        <span>Affiliate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content_main">
+            <div class="dashboard_navbar_main_div">
+                <div class="container-fluid">
+                    <div class="dashboard_nav_content">
+                        <div class="dashboard_nav_text">
+                            <h5>Welcome, Sarah <img src="../../assets/img/Waving.svg" alt=""></h5>
+                            <p>Get started by creating an event</p>
+                        </div>
+                        <div class="dashboard_nav_img">
+                            <img src="../../assets/img/dni1.svg" alt="...">
+                            <img src="../../assets/img/dni2.svg" alt="...">
+                            <img src="../../assets/img/dni3.svg" alt="...">
+                            <img src="../../assets/img/profile.svg" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_content_div">
+                <div class="container-fluid dashboard_container">
+                    <div class="events_view_content_main">
+                        <div class="events_view_top1_main">
+                            <img src="../../assets/img/ev2.svg" class="ev_main_img" alt="">
+                            <div id="share_icon">
+                                <img src="../../assets/img/share.svg" alt="">
+                            </div>
+                            <a href="#reportsModal" id="report_icon" data-bs-toggle="modal">
+                                <img src="../../assets/img/report.svg" alt="">
+                            </a>
+                            <div class="event_view_right_small_card">
+                                <div class="event_view_right_small_card_inner">
+                                    <div class="event_view_right_small_card_cat">
+                                        <p>General Admission</p>
+                                        <div class="event_view_right_small_card_input">
+                                            <button class="decrement" onclick="decrementValue()" disabled><i class="bi bi-dash"></i></button>
+                                            <input type="number" id="number" value="1" min="1" oninput="validateValue(this)">
+                                            <button class="increment" onclick="incrementValue()"><i class="bi bi-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="event_view_right_small_card_text">
+                                        <h4>$59.99 <img src="../../assets/img/info.svg" alt=""></h4>
+                                        <div class="event_view_right_small_btxt">
+                                            <p>+$5.87 fee</p>
+                                            <p>Sale ends today</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event_view_right_small_btn">
+                                    <a href="#thankyouModal" data-bs-toggle="modal">
+                                        <button type="button">Check out for $65.86</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event_view_content">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-12">
+                                    <div class="events_view_bottom_main">
+                                        <div class="events_view_bottom_text1">
+                                            <button type="button"><img src="../../assets/img/baja.svg" alt="">Ticket sales end Soon</button>
+                                            <h6>Saturday, August 24</h6>
+                                            <h1>Music Fest 2024</h1>
+                                            <p>Get ready to experience the ultimate celebration of music at AXESUM 2024! This year's festival promises an electrifying lineup of artists across multiple genres, stunning performances, and an unforgettable atmosphere. Join us for a weekend of non-stop music, vibrant energy, and memories that will last a lifetime.</p>
+                                        </div>
+                                        <div class="events_view_bottom_card1">
+                                            <div class="events_view_bottom_card1_profile">
+                                                <img src="../../assets/img/profile.svg" alt="">
+                                                <div>
+                                                    <p><span>By</span> Sarah Williams</p>
+                                                    <button type="button"><b>348.4k</b> events hosted </button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="contact_orga_btn">Contact the Organizer</button>
+                                        </div>
+                                        
+                                        <h5 class="ev_inner_title">Select date and time</h5>
+    
+                                        <div class="events_view_bottom_card2">
+                                            <div class="events_view_bottom_card2_time">
+                                                <img src="../../assets/img/calend2.svg" alt="">
+                                                <p>Saturday, August 24 · 8 - 9:30pm PKT</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                                    <div class="events_view_bottom_card2_inner_cards" id="ev_cactive">
+                                                        <h6>Day 1</h6>
+                                                        <p>Saturday, August</p>
+                                                        <h5>24</h5>
+                                                        <p>8:00 PM - 9: 00 PM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                                    <div class="events_view_bottom_card2_inner_cards">
+                                                        <h6>Day 2</h6>
+                                                        <p>Sunday, August</p>
+                                                        <h5>25</h5>
+                                                        <p>8:00 PM - 9: 00 PM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                                    <div class="events_view_bottom_card2_inner_cards">
+                                                        <h6>Day 3</h6>
+                                                        <p>Monday, August</p>
+                                                        <h5>26</h5>
+                                                        <p>8:00 PM - 9: 00 PM</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5 class="ev_inner_title">Location</h5>
+    
+                                        <div class="events_view_bottom_online">
+                                            <img src="../../assets/img/online.svg" alt="">
+                                            <p>Online</p>
+                                        </div>
+    
+                                        <h5 class="ev_inner_title">Refund Policy</h5>
+    
+                                        <div class="ev_refund_text">
+                                            <p>Refunds up to <b>7 days</b> before event</p>
+                                            <p>Eventbrite's fee is nonrefundable.</p>
+                                        </div>
+                                        <h5 class="ev_inner_title">About this event</h5>
+                                        <div class="ev_about_text">
+                                            <h6>Welcome to Ayurveda for Self Healing -Level 1 Training, where you will unlock the secrets of Ayurveda
+                                                to transform your life!</h6>
+                                                <p>Our Ayurveda Self-Healing Level 1 Training is designed to introduce you to the fundamental principles
+                                                    of Ayurveda. This training will empower you to identify your dosha (body constitution), understand your
+                                                    gunas (qualities), and make informed lifestyle choices. You will learn practical tips and guidelines for a
+                                                    balanced life, tailored to your individual needs based on your body type, location, age, gender,
+                                                    occupation, and more.</p>
+                                                <p>In this training, you will learn the basics of Ayurveda, including doshas, daily routines, and self-care
+                                                    practices. You'll also get practical tips on how to incorporate Ayurvedic principles into your daily life for
+                                                    improved health and well-being.</p>
+                                                <p>Whether you're new to Ayurveda or looking to deepen your understanding, this training is perfect for
+                                                    anyone interested in natural healing and self-care. Get ready to embark on a journey of self-discovery
+                                                    and empowerment with Ayurveda!</p>
+                                                <h6>Curriculum:</h6>
+                                                <p>1. Introduction to Ayurveda: Philosophy, Core Concepts and Principles</p>
+                                                <p>2. Understanding Doshas: Vata, Pitta, Kapha (Characteristics and Influences); How to Identify Your
+                                                    Dosha</p>
+                                                <p>3. Personal Qualities and Influences: Guna (Sattva, Rajas, Tamas)</p>
+                                                <p>4. Self-Diagnosis Techniques: Physical, Mental, and Emotional Indicators</p>
+                                                <p>5. Lifestyle Modifications</p>
+                                                <p>- Dos and Don'ts for Each Dosha</p>
+                                                <p>- Simple Changes for Immediate Benefits</p>
+                                                <p>- Desha: Geographic Influence on Health</p>
+                                                <h6>Highlights:</h6>
+                                                <p>- Interactive and engaging sessions</p>
+                                                <p>- Personalized guidance from expert practitioners</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events_view_swiper">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <div class="event_view_swiper_img">
+                                            <img src="../../assets/img/event_vs2.svg" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="event_view_swiper_img">
+                                            <img src="../../assets/img/event_vs2.svg" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="event_view_swiper_img">
+                                            <img src="../../assets/img/event_vs2.svg" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="event_view_swiper_img">
+                                            <img src="../../assets/img/event_vs2.svg" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <div class="event_view_swiper_img">
+                                            <img src="../../assets/img/event_vs2.svg" alt="">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                  </div>
+                            </div>
+                            <div class="event_view_faq">
+                                <h5 class="ev_inner_title">FAQs</h5>
+                                <section class="faq_section">
+                                    <div class="faqs_main_div">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Can I upgrade or downgrade my plan at any time?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    Yes, you can upgrade or downgrade your plan at any time through your Axesum account settings. Changes will take effect immediately.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    What plans are available on Axesum?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    How much does it cost to create an event on Axesum?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingFour">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    Is there a free trial available for new users?
+                                                  </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                  <div class="accordion-body">
+                                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                              <h2 class="accordion-header" id="headingFive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    What payment methods are accepted on Axesum?
+                                                </button>
+                                              </h2>
+                                              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <h5 class="ev_inner_title">Tags</h5>
+                            <div class="row">
+                                <div class="col-lg-9 col-md-10 col-sm-12">
+                                    <div class="event_view_tags"> 
+                                        <button type="button">Music Fest 2024</button>
+                                        <button type="button">Online Music Event</button>
+                                        <button type="button">2024 Music </button>
+                                        <button type="button">Music Festival</button>
+                                        <button type="button">Music Festival 2024 </button>
+                                        <button type="button">Axesum</button>
+                                        <button type="button">Hosting</button>
+                                        <button type="button">Soulful Music</button>
+                                        <button type="button">Speakers</button>
+                                        <button type="button">Fest 2024</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_view_cards_main">
+                        <div class="swiper mySwiper_last">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="pop_cat_swiper_card_div">
+                                        <div class="pop_cat_swiper_img">
+                                            <img class="swiper_main_img" src="../../assets/img/card1.svg" alt="...">
+                                            <div class="swiper_on_img_content">
+                                                <button type="button" class="on_img_btn">Concert</button>
+                                                <div id="share_icon2">
+                                                    <img src="../../assets/img/share.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pop_cat_swiper_text">
+                                            <h4>Up Summer Concert</h4>
+                                            <p>By Emma Stone</p>
+                                            <label for="">Sunday, August 4, 2024 at 09:00 AM IST</label>
+                                        </div>
+                                        <div class="swiper_profile_pics_text">
+                                            <p>$250.00</p>
+                                        </div>
+                                        <div class="swiper_bottom_btn">
+                                            <button type="button">Buy Ticket</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="pop_cat_swiper_card_div">
+                                        <div class="pop_cat_swiper_img">
+                                            <img class="swiper_main_img" src="../../assets/img/card2.svg" alt="...">
+                                            <div class="swiper_on_img_content">
+                                                <button type="button" class="on_img_btn">Workshop</button>
+                                                <div id="share_icon2">
+                                                    <img src="../../assets/img/share.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pop_cat_swiper_text">
+                                            <h4>Music Workshop</h4>
+                                            <p>By Anna Wick</p>
+                                            <label for="">Sunday, August 4, 2024 at 09:00 AM IST</label>
+                                        </div>
+                                        <div class="swiper_profile_pics_text">
+                                            <p>$250.00</p>
+                                        </div>
+                                        <div class="swiper_bottom_btn">
+                                            <button type="button">Buy Ticket</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="pop_cat_swiper_card_div">
+                                        <div class="pop_cat_swiper_img">
+                                            <img class="swiper_main_img" src="../../assets/img/card3.svg" alt="...">
+                                            <div class="swiper_on_img_content">
+                                                <button type="button" class="on_img_btn">Festival</button>
+                                                <div id="share_icon2">
+                                                    <img src="../../assets/img/share.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pop_cat_swiper_text">
+                                            <h4>Up Summer Concert</h4>
+                                            <p>By Emma Stone</p>
+                                            <label for="">Sunday, August 4, 2024 at 09:00 AM IST</label>
+                                        </div>
+                                        <div class="swiper_profile_pics_text">
+                                            <p>$250.00</p>
+                                        </div>
+                                        <div class="swiper_bottom_btn">
+                                            <button type="button">Buy Ticket</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="pop_cat_swiper_card_div">
+                                        <div class="pop_cat_swiper_img">
+                                            <img class="swiper_main_img" src="../../assets/img/card1.svg" alt="...">
+                                            <div class="swiper_on_img_content">
+                                                <button type="button" class="on_img_btn">Concert</button>
+                                                <div id="share_icon2">
+                                                    <img src="../../assets/img/share.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pop_cat_swiper_text">
+                                            <h4>Up Summer Concert</h4>
+                                            <p>By Emma Stone</p>
+                                            <label for="">Sunday, August 4, 2024 at 09:00 AM IST</label>
+                                        </div>
+                                        <div class="swiper_profile_pics_text">
+                                            <p>$250.00</p>
+                                        </div>
+                                        <div class="swiper_bottom_btn">
+                                            <button type="button">Buy Ticket</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="pop_cat_swiper_card_div">
+                                        <div class="pop_cat_swiper_img">
+                                            <img class="swiper_main_img" src="../../assets/img/card2.svg" alt="...">
+                                            <div class="swiper_on_img_content">
+                                                <button type="button" class="on_img_btn">Workshop</button>
+                                                <div id="share_icon2">
+                                                    <img src="../../assets/img/share.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pop_cat_swiper_text">
+                                            <h4>Up Summer Concert</h4>
+                                            <p>By Emma Stone</p>
+                                            <label for="">Sunday, August 4, 2024 at 09:00 AM IST</label>
+                                        </div>
+                                        <div class="swiper_profile_pics_text">
+                                            <p>$250.00</p>
+                                        </div>
+                                        <div class="swiper_bottom_btn">
+                                            <button type="button">Buy Ticket</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"> 
+                                    <div class="pop_cat_swiper_card_div">
+                                        <div class="pop_cat_swiper_img">
+                                            <img class="swiper_main_img" src="../../assets/img/card3.svg" alt="...">
+                                            <div class="swiper_on_img_content">
+                                                <button type="button" class="on_img_btn">Festival</button>
+                                                <div id="share_icon2">
+                                                    <img src="../../assets/img/share.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pop_cat_swiper_text">
+                                            <h4>Up Summer Concert</h4>
+                                            <p>By Emma Stone</p>
+                                            <label for="">Sunday, August 4, 2024 at 09:00 AM IST</label>
+                                        </div>
+                                        <div class="swiper_profile_pics_text">
+                                            <p>$250.00</p>
+                                        </div>
+                                        <div class="swiper_bottom_btn">
+                                            <button type="button">Buy Ticket</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- ALL_______MODALS -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="reportsModal" tabindex="-1" aria-labelledby="reportsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-body">
+            <div class="modal_content_main">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal_inner_content_main">
+                    <div class="modal_inner_content_title">
+                        <h2><img src="../../assets/img/report.svg" alt=""> Report</h2>
+                        <p>Help us keep the Axesum safe by telling us why you are reporting this event</p>
+                    </div>
+                    <div class="reports_modal_text">
+                        <h4>Select an action</h4>
+                        <div class="reports_modal_redio_btns">
+                            <input type="radio" id="report1">
+                            <label for="report1">Spam or Fraud</label>
+                        </div>
+                        <div class="reports_modal_redio_btns">
+                            <input type="radio" id="report2">
+                            <label for="report2">False Advertising</label>
+                        </div>
+                        <div class="reports_modal_redio_btns">
+                            <input type="radio" id="report3">
+                            <label for="report3">Harassment or Abuse</label>
+                        </div>
+                        <div class="reports_modal_redio_btns">
+                            <input type="radio" id="report4">
+                            <label for="report4">Breach of Privacy</label>
+                        </div>
+                        <div class="reports_modal_redio_btns">
+                            <input type="radio" id="report5">
+                            <label for="report5">Misuse of Funds</label>
+                        </div>
+                        <div class="reports_modal_redio_btns">
+                            <input type="radio" id="report6">
+                            <label for="report6">Unethical Behavior</label>
+                        </div>
+                        <div class="reports_modal_redio_btns">
+                            <input type="radio" id="report7">
+                            <label for="report7">Violation of Local Regulations</label>
+                        </div>
+                        <h4>Write a report</h4>
+                        <div class="reports_modal_textarea">
+                            <label for="">Description</label>
+                            <textarea name="" id="" rows="6" placeholder="Explain what happended..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_last_btns">
+                    <button type="button" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="modalbtn_active">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="waitlistModal" tabindex="-1" aria-labelledby="waitlistModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered waitlistModal_dialog" >
+        <div class="modal-content">
+        <div class="modal-body">
+            <div class="waitlist_modal_main_div">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="waitlist_modal_img">
+                    <img src="../../assets/img/waitlist.svg" alt="">
+                </div>
+                <div class="waitlist_modal_card_div">
+                    <div class="waitlist_modal_card_title">
+                        <h2><img src="../../assets/img/ph_user-list.svg" alt=""> Join the waitlist</h2>
+                        <p>Please note that joining the waitlist does not guarantee a ticket, as availability depends on the event organizer. We'll notify you as soon as tickets are back, but be sure to act fast once they are!</p>
+                    </div>
+                    <h4>Contact Information</h4>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="waitlist_modal_card_input">
+                                <label for="">First Name</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="waitlist_modal_card_input">
+                                <label for="">Last Name*</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="waitlist_modal_card_input">
+                                <label for="">Email*</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="waitlist_modal_card_input">
+                                <label for="">Phone Number (Optional)</label>
+                                <input type="text" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="waitlist_modal_terms_text">
+                        <p>By clicking on  “Join Waitlist”, you agree with our <a href="#">Terms & Conditions</a>, and <a href="#">Privacy Policy</a>, and accept that axesum may share your contact information with event organizer</p>
+                    </div>
+                    <div class="modal_last_btns">
+                        <button type="button" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="modalbtn_active">Submit</button>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmationLabelModal" tabindex="-1" aria-labelledby="confirmationLabelModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-body">
+            <div class="confirmationLabelModal_main">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="confirmationLabelModal_inner">
+                    <img src="../../assets/img/flat-color-icons_approval.svg" alt="">
+                    <h5>You are on the waitlist</h5>
+                    <p>We will let you know as soon as tickets are available</p>
+                    <button type="button" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thankyouModal" tabindex="-1" aria-labelledby="thankyouModalLabel" aria-hidden="true"> 
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-body">
+            <div class="confirmationLabelModal_main">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="confirmationLabelModal_inner">
+                    <img src="../../assets/img/flat-color-icons_approval.svg" alt="">
+                    <h5>Your order is confirmed</h5>
+                    <p>Order Number:  <a href="#">#GA1282O2P22</a></p>
+                    <div class="modal_last_btns" style="justify-content: center; margin-top: 20px;">
+                        <button type="submit" class="modalbtn_active">View Ticket</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="timeoutModal" tabindex="-1" aria-labelledby="timeoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-body">
+            <div class="confirmationLabelModal_main">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="confirmationLabelModal_inner">
+                    <img src="../../assets/img/warning.svg" alt="">
+                    <h5>Time Out</h5>
+                    <p>Please restart your purchasing process</p>
+                    <button type="button" data-bs-dismiss="modal">Back to event</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="shopModal" tabindex="-1" aria-labelledby="shopModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-body">
+            <div class="confirmationLabelModal_main">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="confirmationLabelModal_inner">
+                    <img src="../../assets/img/shop.svg" alt="">
+                    <h5>Are you sure you want to leave?</h5>
+                    <p>The selected tickets might not be available later</p>
+                    <div class="modal_last_btns" style="justify-content: center; margin-top: 20px;">
+                        <button type="button" data-bs-dismiss="modal">Leave</button>
+                        <button type="submit" class="modalbtn_active">Stay</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../assets/js/dashboard.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <script>
+        var swiper_last = new Swiper(".mySwiper_last", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                280: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                680: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                800: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1300: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>

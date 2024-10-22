@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axesum -  Orders</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css"> 
+</head>
+
+<body> 
+
+    <div class="dashboard2_main">
+        <div class="dashboard2_sidebar2_main">
+            <div class="dashboard2_sidebar2">
+                <div class="dashboard2_top1">
+                    <div class="sidebar2_logos">
+                        <a href="#"><img src="../assets/img/logo.svg" alt="..."></a>
+                        <button type="button"><img src="../assets/img/toggle_shape.svg" alt="..."></button>
+                    </div>
+                    <button class="back_btn"><i class="bi bi-chevron-left"></i> Back to events</button>
+                    <div class="sidebar_credits">
+                        <img src="../assets/img/ph_coins-light.svg" alt="">
+                        <p>Credits Used:</p>
+                        <span>200/200</span>
+                    </div>
+                </div>
+                <div class="sidebar_accordion_main">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               <span> <img src="../assets/img/calendar.svg" alt=""> Event Setup</span>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                             <div class="sidebar2_accordion_inner">
+                                <a href="./manage_setting.html" class="side_acc_active"><img src="../assets/img/setting.svg" alt=""> Settings</a>
+                                <a href="./manage_event.html "><img src="../assets/img/side2_2.svg" alt=""> Event</a>
+                                <a href="all_tickets.html"><img src="../assets/img/side2_3.svg" alt=""> Tickets</a>
+                                <a href="./payment_method.html"><img src="../assets/img/side2_4.png" alt=""> Payment Methods</a>
+                             </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span> <img src="../assets/img/hugeicons_marketing.svg" alt=""> Marketing & Promos  </span>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="sidebar2_accordion_inner">
+                                    <a href="./coupons.html" class="side_acc_active"><img src="../assets/img/side2_2.svg" alt=""> Coupons</a>
+                                    <a href="tracking_link.html">
+                                        <img src="../assets/img/side2_3.svg" alt=""> Tracking Links</a>
+                                    <a href="./tracking_pixels.html">
+                                        <img src="../assets/img/side2_4.png" alt=""> Tracking Pixels</a>
+                                    <a href="./embeded_checkout.html"><img src="../assets/img/side2_4.png" alt=""> Embedded</a>
+                                    <a href="#"><img src="../assets/img/side2_4.png" alt=""> Contacts</a>
+                                    <a href="#"><img src="../assets/img/side2_4.png" alt=""> Email Campaigns</a>
+                                 </div>
+                            </div>
+                          </div>
+                        </div>         
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span> <img src="../assets/img/carbon_gui-management.svg" alt=""> Event Management </span>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="sidebar2_accordion_inner">
+                                    <a href="#" class="side_acc_active"><img src="../assets/img/setting.svg" alt=""> Settings</a>
+                                    <a href="#"><img src="../assets/img/side2_2.svg" alt=""> Event</a>
+                                    <a href="#"><img src="../assets/img/side2_3.svg" alt=""> Tickets</a>
+                                    <a href="#"><img src="../assets/img/side2_4.png" alt=""> Payment Methods</a>
+                                 </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  <span> <img src="../assets/img/pajamas_issue-type-enhancement.svg" alt=""> Enhancement </span>
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <div class="sidebar2_accordion_inner">
+                                    <a href="#" class="side_acc_active"><img src="../assets/img/setting.svg" alt=""> Settings</a>
+                                    <a href="#"><img src="../assets/img/side2_2.svg" alt=""> Event</a>
+                                    <a href="#"><img src="../assets/img/side2_3.svg" alt=""> Tickets</a>
+                                    <a href="#"><img src="../assets/img/side2_4.png" alt=""> Payment Methods</a>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  <span> <img src="../assets/img/hugeicons_analytics-up.svg" alt=""> Analytics</span>
+                              </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <div class="sidebar2_accordion_inner">
+                                    <a href="#" class="side_acc_active"><img src="../assets/img/setting.svg" alt=""> Settings</a>
+                                    <a href="#"><img src="../assets/img/side2_2.svg" alt=""> Event</a>
+                                    <a href="#"><img src="../assets/img/side2_3.svg" alt=""> Tickets</a>
+                                    <a href="#"><img src="../assets/img/side2_4.png" alt=""> Payment Methods</a>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  <span> <img src="../assets/img/carbon_gui-management.svg" alt=""> Contingency Mgmt</span>
+                              </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <div class="sidebar2_accordion_inner">
+                                    <a href="#" class="side_acc_active"><img src="../assets/img/setting.svg" alt=""> Settings</a>
+                                    <a href="#"><img src="../assets/img/side2_2.svg" alt=""> Event</a>
+                                    <a href="#"><img src="../assets/img/side2_3.svg" alt=""> Tickets</a>
+                                    <a href="#"><img src="../assets/img/side2_4.png" alt=""> Payment Methods</a>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                  <span> <img src="../assets/img/carbon_search-advanced.svg" alt=""> Advanced</span>
+                              </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <div class="sidebar2_accordion_inner">
+                                    <a href="#" class="side_acc_active"><img src="../assets/img/setting.svg" alt=""> Settings</a>
+                                    <a href="#"><img src="../assets/img/side2_2.svg" alt=""> Event</a>
+                                    <a href="#"><img src="../assets/img/side2_3.svg" alt=""> Tickets</a>
+                                    <a href="#"><img src="../assets/img/side2_4.png" alt=""> Payment Methods</a>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="dashboard2_content_main_div">
+        <div class="dashboard2_header2_main">
+            <div class="dashboard2_nav2_text">
+                <h5>Axesum 2024</h5>
+                <p>Tue, Sep 24, 2024, 10:00 AM EST</p>
+            </div>
+            <div class="dashboard2_header2_right">
+                <div class="dashboard2_header2_right_btn">
+                    <button type="button"><img src="../assets/img/mdi_eye.svg" alt="">Preview your event</button>
+                    <button type="button">Publish</button>
+                    <img src="../assets/img/profile.svg" class="head2_profile" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="dashboard2_inner_content">
+            <div class="dashboard2_manage_card_body_div"> 
+                <div class="dash2_top_title mt-3">
+                    <h4>Orders</h4>
+                </div>
+                <div class="events_bar_main mt-4">
+                    <div class="events_searchbar_filter">
+                        <a href="#order_filters" data-bs-toggle="modal"><button type="button"><img src="../assets/img/filter.svg" alt=""> Filters</button></a>
+                    </div>
+                    <div class="events_bar_right_btn">
+                        <a href="#">
+                            <button type="button">Download as CSV</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="email_attendee_tabs_main">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-order_tab1-tab" data-bs-toggle="pill" data-bs-target="#pills-order_tab1" type="button" role="tab" aria-controls="pills-order_tab1" aria-selected="true">All (10)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-order_tab2-tab" data-bs-toggle="pill" data-bs-target="#pills-order_tab2" type="button" role="tab" aria-controls="pills-order_tab2" aria-selected="false">Paid (6)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-order_tab3-tab" data-bs-toggle="pill" data-bs-target="#pills-order_tab3" type="button" role="tab" aria-controls="pills-order_tab3" aria-selected="false">to be authorized (4)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-order_tab4-tab" data-bs-toggle="pill" data-bs-target="#pills-order_tab4" type="button" role="tab" aria-controls="pills-order_tab4" aria-selected="false">Pending (0) </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-order_tab5-tab" data-bs-toggle="pill" data-bs-target="#pills-order_tab5" type="button" role="tab" aria-controls="pills-order_tab5" aria-selected="false">Partial Payment (0)</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-order_tab6-tab" data-bs-toggle="pill" data-bs-target="#pills-order_tab6" type="button" role="tab" aria-controls="pills-order_tab6" aria-selected="false">Cancelled (0)</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-order_tab1"
+                            role="tabpanel" aria-labelledby="pills-order_tab1-tab" tabindex="0">
+                            <div class="orders_tabs_content">
+                                <div class="orders_table">
+                                    <table class="table">
+                                        <thead> 
+                                          <tr>
+                                            <th scope="col"><p class="mb-0 text-center"> <input type="checkbox" class="order_cb1 single_checkbox"></p></th>
+                                            <th scope="col"><p class="et_ptxt text-left">Attendee fullname/ Email</p></th>
+                                            <th scope="col"><p class="et_ptxt text-center">Order ID </p></th>
+                                            <th scope="col"><p class="et_ptxt text-center">Purchase Date</p></th>
+                                            <th scope="col"><p class="et_ptxt text-center">Payment Method</p></th> 
+                                            <th scope="col"><p class="et_ptxt text-center">Status</p></th> 
+                                            <th scope="col"><p class="et_ptxt text-center">Order Price</p></th> 
+                                            <th scope="col"><p class="text-center"></p></th> 
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">
+                                                <p class="mb-0 order_cb2"><input class="single_checkbox" type="checkbox"></p>
+                                            </th> 
+                                            <td>
+                                                <div class="order_table_txt1">
+                                                    <p>Sarah Williams</p>
+                                                    <span>Sarahwilliam@gmail.com</span>
+                                                </div>
+                                            </td>
+                                            <td><p class="order_tble_txt2">123456</p></td>
+                                            <td><p class="order_tble_txt2">7-0ct-2024</p></td>
+                                            <td><p class="order_tble_txt2">PayPal</p></td>
+                                            <td><p class="order_tble_txt2"><span>Paid</span></p></td>
+                                            <td><p class="order_tble_txt2">USD $100</p></td>
+                                            <td>
+                                                <div class="e2_dropdown order_tble_txt2">
+                                                    <div class="dropdown">
+                                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="bi bi-three-dots-vertical"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i> View Order</a></li>
+                                                            <li><a class="dropdown-item" href="#"><img src="../assets/img/resend.svg" alt="">Resend</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i class="bi bi-download"></i> Download</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">
+                                                <p class="mb-0 order_cb2"><input class="single_checkbox" type="checkbox"></p>
+                                            </th> 
+                                            <td>
+                                                <div class="order_table_txt1">
+                                                    <p>Sarah Williams</p>
+                                                    <span>Sarahwilliam@gmail.com</span>
+                                                </div>
+                                            </td>
+                                            <td><p class="order_tble_txt2">123456</p></td>
+                                            <td><p class="order_tble_txt2">7-0ct-2024</p></td>
+                                            <td><p class="order_tble_txt2">PayPal</p></td>
+                                            <td><p class="order_tble_txt2"><span class="Pending_span">Pending</span></p></td>
+                                            <td><p class="order_tble_txt2">USD $100</p></td>
+                                            <td>
+                                                <div class="e2_dropdown order_tble_txt2">
+                                                    <div class="dropdown">
+                                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="bi bi-three-dots-vertical"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i> View Order</a></li>
+                                                            <li><a class="dropdown-item" href="#"><img src="../assets/img/resend.svg" alt="">Resend</a></li>
+                                                            <li><a class="dropdown-item" href="#"><i class="bi bi-download"></i> Download</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">
+                                                <p class="mb-0 order_cb2"><input class="single_checkbox" type="checkbox"></p>
+                                            </th> 
+                                            <td>
+                                                <div class="order_table_txt1">
+                                                    <p>Sarah Williams</p>
+                                                    <span>Sarahwilliam@gmail.com</span>
+                                                </div>
+                                            </td>
+                                            <td><p class="order_tble_txt2">123456</p></td>
+                                            <td><p class="order_tble_txt2">7-0ct-2024</p></td>
+                                            <td><p class="order_tble_txt2">PayPal</p></td>
+                                            <td><p class="order_tble_txt2"><span class="Cancelled_span">Cancelled</span></p></td>
+                                            <td><p class="order_tble_txt2">USD $100</p></td>
+                                            <td>
+                                                <div class="e2_dropdown order_tble_txt2">
+                                                    <div class="dropdown">
+                                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="bi bi-three-dots-vertical"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="bi bi-eye"></i> View Order</a></li>
+                                                        <li><a class="dropdown-item" href="#"><img src="../assets/img/resend.svg" alt="">Resend</a></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="bi bi-download"></i> Download</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-order_tab2"
+                            role="tabpanel" aria-labelledby="pills-order_tab2-tab" tabindex="0">
+                            order_tab2
+                        </div>
+                        <div class="tab-pane fade" id="pills-order_tab3"
+                            role="tabpanel" aria-labelledby="pills-order_tab3-tab" tabindex="0">
+                            order_tab3
+                        </div>
+                        <div class="tab-pane fade" id="pills-order_tab4"
+                            role="tabpanel" aria-labelledby="pills-order_tab4-tab" tabindex="0">
+                            order_tab4
+                        </div>
+                        <div class="tab-pane fade" id="pills-order_tab5"
+                            role="tabpanel" aria-labelledby="pills-order_tab5-tab" tabindex="0">
+                            order_tab5
+                        </div>
+                        <div class="tab-pane fade" id="pills-order_tab6"
+                            role="tabpanel" aria-labelledby="pills-order_tab6-tab" tabindex="0">
+                            order_tab6
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+
+
+
+    <div class="modal fade" id="order_filters" tabindex="-1" aria-labelledby="order_filtersLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="createEventmodal_main">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="create_event_modal_title">
+                            <h3><img src="../assets/img/oui_filter.svg" alt=""> Filter </h3>
+                        </div>
+                        <div class="create_event_subtititle">
+                            <p>Event Name</p>
+                        </div>
+                        <div class="create_event_modal_inner_main">
+                            <div class="create_event_modal_check_btns_mian">
+                                <label for="filter1" class="create_event_modal_check_btns_inner">
+                                    <input id="filter1" type="checkbox" name="event">
+                                    <span>Sarah Williams</span>
+                                </label>
+                                <label for="filter2" class="create_event_modal_check_btns_inner">
+                                    <input id="filter2" type="checkbox" name="event">
+                                    <span>Christiane Rayne </span>
+                                </label>
+                                <label for="filter3" class="create_event_modal_check_btns_inner">
+                                    <input id="filter3" type="checkbox" name="event">
+                                    <span>Chile Wayne </span>
+                                </label>
+
+                                <label for="filter4" class="create_event_modal_check_btns_inner">
+                                    <input id="filter4" type="checkbox" name="event">
+                                    <span>Nora Williams </span>
+                                </label>
+                                <label for="filter5" class="create_event_modal_check_btns_inner">
+                                    <input id="filter5" type="checkbox" name="event">
+                                    <span>Jenna </span>
+                                </label>
+                            </div>
+                            <div class="create_event_subtititle">
+                                <p>Email</p>
+                            </div>
+                            <div class="create_event_modal_check_btns_mian">
+                                <label for="filter6" class="create_event_modal_check_btns_inner">
+                                    <input id="filter6" type="checkbox" name="event2">
+                                    <span>Sarahwilliam@gmail.com</span>
+                                </label>
+                                <label for="filter7" class="create_event_modal_check_btns_inner">
+                                    <input id="filter7" type="checkbox" name="event2">
+                                    <span>cr0821@gmail.com</span>
+                                </label>
+                                <label for="filter8" class="create_event_modal_check_btns_inner">
+                                    <input id="filter8" type="checkbox" name="event2">
+                                    <span>Chilewayne@gmail.com</span>
+                                </label>
+                                <label for="filter9" class="create_event_modal_check_btns_inner">
+                                    <input id="filter9" type="checkbox" name="event2">
+                                    <span>Noraswms92@hotmail.com</span>
+                                </label>
+                                <label for="filter10" class="create_event_modal_check_btns_inner">
+                                    <input id="filter10" type="checkbox" name="event2">
+                                    <span>Jennaaron12@gmail.com</span>
+                                </label>
+                            </div>
+                            <div class="create_event_subtititle">
+                                <p>Order ID</p>
+                            </div>
+                            <div class="create_event_modal_check_btns_mian">
+                                <label for="filter9" class="create_event_modal_check_btns_inner">
+                                    <input id="filter9" type="checkbox" name="event3">
+                                    <span>123456</span>
+                                </label>
+                                <label for="filter10" class="create_event_modal_check_btns_inner">
+                                    <input id="filter10" type="checkbox" name="event3">
+                                    <span>456789</span>
+                                </label>
+                                <label for="filter11" class="create_event_modal_check_btns_inner">
+                                    <input id="filter11" type="checkbox" name="event3">
+                                    <span>910111</span>
+                                </label>
+                                <label for="filter12" class="create_event_modal_check_btns_inner">
+                                    <input id="filter12" type="checkbox" name="event3">
+                                    <span>789123</span>
+                                </label>
+                                <label for="filter13" class="create_event_modal_check_btns_inner">
+                                    <input id="filter13" type="checkbox" name="event3">
+                                    <span>675234</span>
+                                </label>
+                            </div>
+                            <div class="create_event_subtititle">
+                                <p>Purchase Date</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="copy_event_modal_inner_inputs mt-0">
+                                        <input type="date" placeholder="Start Date" style="border-radius: 30px;">
+                                        <img src="../assets/img/uil_calender.svg" alt="Icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="create_event_subtititle">
+                                <p>Event Status</p>
+                            </div>
+                            <div class="create_event_modal_check_btns_mian">
+                                <label for="filter14" class="create_event_modal_check_btns_inner">
+                                    <input id="filter14" type="checkbox" name="event4">
+                                    <span>Cash</span>
+                                </label>
+                                <label for="filter15" class="create_event_modal_check_btns_inner">
+                                    <input id="filter15" type="checkbox" name="event4">
+                                    <span>Check</span>
+                                </label>
+                                <label for="filter16" class="create_event_modal_check_btns_inner">
+                                    <input id="filter16" type="checkbox" name="event4">
+                                    <span>Paypal</span>
+                                </label>
+                                <label for="filter17" class="create_event_modal_check_btns_inner">
+                                    <input id="filter17" type="checkbox" name="event4">
+                                    <span>Stripe</span>
+                                </label>
+                                <label for="filter18" class="create_event_modal_check_btns_inner">
+                                    <input id="filter18" type="checkbox" name="event4">
+                                    <span>Mercado Pagp</span>
+                                </label>
+                                <label for="filter19" class="create_event_modal_check_btns_inner">
+                                    <input id="filter19" type="checkbox" name="event4">
+                                    <span>Google Pay</span>
+                                </label>
+                            </div>
+                            <div class="create_event_subtititle">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="createevent_last_btns">
+                            <a href="#">Clear all</a>
+                            <button type="submit">Show 7 Results</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Gotham_Light';
+    src: url(../../assets/fonts/Gotham-Light.otf);
+}
+@font-face {
+    font-family: 'Gotham_Medium';
+    src: url(../../assets/fonts/GothamMedium.ttf);
+}
+@font-face {
+    font-family: 'Gotham_Bold';
+    src: url(../../assets/fonts/GothamBold.ttf);
+}
+/* box-shadow: 0 0 150px 55px #ffde00; */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gotham_Light';
+    background: #000000;
+}
+
+/* NAVBAR SECTION ===================================================================================== */
+.accounts_section{
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accounts_main{
+    margin-top: 100px;
+    display: flex;
+}
+.accounts_left_main{
+    width: 50%;
+}
+.accounts_left_img{
+    background-image: url(../../assets/img/login.svg);
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px 0px 0px 16px;
+}
+.accounts_right_main{
+    background: #1D1F20;
+    height: 850px;
+    width: 50%;
+    padding: 40px 30px;
+    border-radius: 0px 16px 16px 0px; 
+    overflow-y: scroll;
+}
+.accounts_right_main::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.accounts_right_card_body_div{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+.accounts_right_card_logo_div{
+    text-align: center;
+}
+.accounts_right_card_logo_div img{
+    height: 100px;
+    width: auto;
+}
+.accounts_right_card_logo_div h2{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.6px;
+    font-family: 'Gotham_Bold';
+    color: #fff;
+}
+.accounts_right_card_input_inner{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+}
+.accounts_right_card_input_inner input {
+  position: relative;
+  display: block;
+  width: 100%;
+  border: 1px solid #93989A;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 12px 40px 12px 45px;
+  outline: none !important;
+  font-size: 16px;
+  color: #fff;
+  transition: all .2s ease-in-out;
+}
+.accounts_right_card_input_inner label {
+  position: absolute;
+  top: 18px; 
+  left: 40px;
+  text-align: left;
+  display: inline-block;
+  padding: 0 4px;
+  height: 14px;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #1D1F20;
+  color: #93989A;
+  margin: 0px auto;
+  cursor: text;
+  transition: all .15s ease-in-out;
+}
+.accounts_right_card_input_inner input:hover, input:focus {
+    border: 1px solid #7B00D9;
+}
+.accounts_right_card_input_inner input:valid + label, input:focus + label { 
+  top: -6px;
+  color: #fff;
+}
+.accounts_right_card_input_inner img{
+    position: absolute;
+    top: 13px;
+    left: 16px;
+}
+#passwordIcon{
+    color: #93989A;
+    position: absolute;
+    top: 12px;
+    right: 19px;
+}
+.accounts_btn{
+    margin-top: 40px;
+}
+.accounts_btn button{
+    background: #7B00D9;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+    width: 100%;
+}
+.forgot_pass {
+    text-align: end;
+}
+.forgot_pass a{
+    color: #369DFE;
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.or_text{
+    margin-top: 60px;
+    position: relative;
+    border-bottom: 1px solid #93989A;
+    text-align: center;
+}
+.or_text label{
+    color: #93989A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1D1F20;
+    width: max-content;
+    padding: 1px 12px;
+}
+.accounts_social_icons_main{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.accounts_social_icons_inner{
+    border: 1px solid #93989A;
+    padding: 8px 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 240px;
+    gap: 12px;
+}
+.accounts_social_icons_inner img{
+    height: 20px;
+    width: auto;
+}
+.accounts_social_icons_inner p{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+}
+.last_text{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+}
+.last_text a{
+    color: #369DFE;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    text-decoration: none;
+}
+.terms_text_main{
+    margin-top: 30px;
+}
+.terms_text_inner{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.terms_text_inner p{
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    color: #93989A;
+}
+.terms_text_inner p span{
+    color: #E8655A;
+}
+.terms_text_inner p a{
+    color: #369DFE;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}

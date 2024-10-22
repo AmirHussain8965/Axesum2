@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axesum - Organization Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+
+<body> 
+
+    <section class="dashboard_main_section">
+        <div class="dashboard_sidebar_main_div">
+            <div class="dashboard_sidebar_logo_div"> 
+                <a href='#'><img src="../assets/img/logo.svg" alt=""></a>
+                <button type="button" id="btn_toggle_mobile">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="dashboard_sidebar_links_main">
+                <div class="dashboard_sidebar_links_div">
+                    <a class="active" href='./dashboard.html'>
+                        <img src="../assets/img/ds1.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>                
+                    <a href="#">
+                        <img src="../assets/img/ds4.svg" alt="">
+                        <span>My Events</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds5.svg" alt="">
+                        <span>My Collection</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds6.svg" alt="">
+                        <span>Email Attendees</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds7.svg" alt="">
+                        <span>Organization </span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds8.svg" alt="">
+                        <span>Affiliate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content_main">
+            <div class="dashboard_navbar_main_div">
+                <div class="container-fluid">
+                    <div class="dashboard_nav_content">
+                        <div class="dashboard_nav_text">
+                            <h5>Welcome, Sarah <img src="../assets/img/Waving.svg" alt=""></h5>
+                            <p>Get started by creating an event</p>
+                        </div>
+                        <div class="dashboard_nav_img">
+                            <img src="../assets/img/dni1.svg" alt="...">
+                            <img src="../assets/img/dni2.svg" alt="...">
+                            <img src="../assets/img/dni3.svg" alt="...">
+                            <img src="../assets/img/profile.svg" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_content_div">
+                <div class="container-fluid dashboard_container">
+                    <div class="email_attendee_main">
+                       <div class="profile4_card1_main">
+                        <div class="profile4_card1_img">
+                            <img src="../assets/img/col_view_banner.svg" alt="">
+                        </div>
+                        <div class="profile4_card1_text_div">
+                            <div class="profile4_card1_title">
+                                <h4>Axesum Education</h4>
+                                <button type="button">Contact the Organizer</button>
+                            </div>
+                            <span><img src="../assets/img/world.svg" alt=""><a href="#">www.axesumeducation.com</a></span>
+                            <p>Axesum Education is a premier event organizer specializing in educational conferences and workshops, fostering knowledge exchange and professional growth. They bring together experts, educators, and learners to create impactful learning experiences.</p>
+                        </div>
+                       </div>
+                       <div class="email_attendee_tabs_main">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Upcoming (1)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Past (0)</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="pop_cat_swiper_card_div mt-3">
+                                            <div class="pop_cat_swiper_img">
+                                                <img class="swiper_main_img" src="../assets/img/concert.svg" alt="...">
+                                                <div class="swiper_on_img_content">
+                                                    <button type="button" class="on_img_btn">Concert</button>
+                                                    <div id="share_icon3">
+                                                        <img src="../assets/img/share.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pop_cat_swiper_text">
+                                                <h4>Up Summer Concert</h4>
+                                                <p>By Emma Stone</p>
+                                                <label for="">Sunday, August 4, 2024 at 09:00 AM IST</label>
+                                            </div>
+                                            <div class="swiper_profile_pics_text">
+                                                <p>$250.00</p>
+                                            </div>
+                                            <div class="swiper_bottom_btn">
+                                                <button type="button">Buy Ticket</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                
+                            </div>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

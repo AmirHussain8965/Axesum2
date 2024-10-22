@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Axesum - Roles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+
+<body> 
+
+    <section class="dashboard_main_section">
+        <div class="dashboard_sidebar_main_div">
+            <div class="dashboard_sidebar_logo_div"> 
+                <a href='#'><img src="../assets/img/logo.svg" alt=""></a>
+                <button type="button" id="btn_toggle_mobile">
+                <i class="bi bi-x"></i>
+            </div>
+            <div class="dashboard_sidebar_links_main">
+                <div class="dashboard_sidebar_links_div">
+                    <a class="active" href='./dashboard.html'>
+                        <img src="../assets/img/ds1.svg" alt="">
+                        <span>Dashboard</span>
+                    </a>                
+                    <a href="#">
+                        <img src="../assets/img/ds4.svg" alt="">
+                        <span>My Events</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds5.svg" alt="">
+                        <span>My Collection</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds6.svg" alt="">
+                        <span>Email Attendees</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds7.svg" alt="">
+                        <span>Organization </span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/ds8.svg" alt="">
+                        <span>Affiliate</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content_main">
+            <div class="dashboard_navbar_main_div">
+                <div class="container-fluid">
+                    <div class="dashboard_nav_content">
+                        <div class="dashboard_nav_text">
+                            <h5>Welcome, Sarah <img src="../assets/img/Waving.svg" alt=""></h5>
+                            <p>Get started by creating an event</p>
+                        </div>
+                        <div class="dashboard_nav_img">
+                            <img src="../assets/img/dni1.svg" alt="...">
+                            <img src="../assets/img/dni2.svg" alt="...">
+                            <img src="../assets/img/dni3.svg" alt="...">
+                            <img src="../assets/img/profile.svg" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_content_div">
+                <div class="container-fluid dashboard_container">
+                    <div class="email_attendee_main">
+                        <div class="email_attendee_bar_main">
+                            <div class="email_att_top_text">
+                                <h3>Create a role</h3>
+                            </div>
+                        </div>
+                        <div class="createrole_input">
+                            <label for="">Role Name*</label>
+                            <input type="text" placeholder="">
+                        </div>
+                        <p class="cr_roles_sub">Choose Permissions:</p>
+                        <div class="createrole_accordions_main">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Event Creation
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="createrole_accordion_body">
+                                          <div class="createrole_accordion_text">
+                                            <input type="checkbox" id="cr_s1">
+                                            <label for="cr_s1">
+                                              <b>Sellect All</b>
+                                            </label>
+                                          </div>
+                                          <div class="createrole_accordion_buttons">
+                                            <button type="button">None</button>
+                                            <button type="button">View</button>
+                                            <button type="button" class="change_btn_bg">Edit</button>
+                                          </div>
+                                        </div>
+                                        <div class="createrole_accordion_body">
+                                          <div class="createrole_accordion_text">
+                                            <input type="checkbox" id="cr_s2">
+                                            <label for="cr_s2">
+                                              <b>Event Creation</b>
+                                              <p>Can create, edit, and delete event</p>
+                                            </label>
+                                          </div>
+                                          <div class="createrole_accordion_buttons">
+                                            <button type="button">None</button>
+                                            <button type="button">View</button>
+                                            <button type="button" class="change_btn_bg">Edit</button>
+                                          </div>
+                                        </div>
+                                        <div class="createrole_accordion_body">
+                                          <div class="createrole_accordion_text">
+                                            <label for="cr_s3">
+                                              <b>Add a ticket</b>
+                                              <p>Can add, and delete tickets</p>
+                                            </label>
+                                          </div>
+                                          <div class="createrole_accordion_buttons">
+                                            <button type="button">None</button>
+                                            <button type="button">View</button>
+                                            <button type="button" class="change_btn_bg">Edit</button>
+                                          </div>
+                                        </div>
+                                        <div class="createrole_accordion_body">
+                                          <div class="createrole_accordion_text">
+                                            <label for="cr_s4">
+                                              <b>Payment Method</b>
+                                              <p>Can add a payment method</p>
+                                            </label>
+                                          </div>
+                                          <div class="createrole_accordion_buttons">
+                                            <button type="button">None</button>
+                                            <button type="button">View</button>
+                                            <button type="button" class="change_btn_bg">Edit</button>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Waitlist Settings
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <div class="createrole_accordion_body">
+                                        <div class="createrole_accordion_text">
+                                          <input type="checkbox" id="cr_s1">
+                                          <label for="cr_s6">
+                                            <b>Sellect All</b>
+                                          </label>
+                                        </div>
+                                        <div class="createrole_accordion_buttons">
+                                          <button type="button">None</button>
+                                          <button type="button">View</button>
+                                          <button type="button" class="change_btn_bg">Edit</button>
+                                        </div>
+                                      </div>
+                                      <div class="createrole_accordion_body">
+                                        <div class="createrole_accordion_text">
+                                          <input type="checkbox" id="cr_s2">
+                                          <label for="cr_s7">
+                                            <b>Event Creation</b>
+                                            <p>Can create, edit, and delete event</p>
+                                          </label>
+                                        </div>
+                                        <div class="createrole_accordion_buttons">
+                                          <button type="button">None</button>
+                                          <button type="button">View</button>
+                                          <button type="button" class="change_btn_bg">Edit</button>
+                                        </div>
+                                      </div>
+                                      <div class="createrole_accordion_body">
+                                        <div class="createrole_accordion_text">
+                                          <label for="">
+                                            <b>Add a ticket</b>
+                                            <p>Can add, and delete tickets</p>
+                                          </label>
+                                        </div>
+                                        <div class="createrole_accordion_buttons">
+                                          <button type="button">None</button>
+                                          <button type="button">View</button>
+                                          <button type="button" class="change_btn_bg">Edit</button>
+                                        </div>
+                                      </div>
+                                      <div class="createrole_accordion_body">
+                                        <div class="createrole_accordion_text">
+                                          <label for="">
+                                            <b>Payment Method</b>
+                                            <p>Can add a payment method</p>
+                                          </label>
+                                        </div>
+                                        <div class="createrole_accordion_buttons">
+                                          <button type="button">None</button>
+                                          <button type="button">View</button>
+                                          <button type="button" class="change_btn_bg">Edit</button>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+
+</body>
+
+</html>
